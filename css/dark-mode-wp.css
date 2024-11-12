@@ -1,0 +1,355 @@
+/* Botón de modo oscuro */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+/* Estilos base del modo oscuro */
+body.dark-mode {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+/* Selectores específicos para Elementor */
+.dark-mode .elementor-section,
+.dark-mode .elementor-container,
+.dark-mode .elementor-column-wrap,
+.dark-mode .elementor-widget-wrap {
+    background-color: transparent !important;
+}
+
+.dark-mode .elementor-heading-title,
+.dark-mode .elementor-text-editor,
+.dark-mode .elementor-widget-container {
+    color: #ffffff !important;
+}
+
+/* Manejo de fondos de sección en Elementor */
+.dark-mode .elementor-section[data-settings*="background_background"],
+.dark-mode .elementor-column[data-settings*="background_background"] {
+    background-color: #2d2d2d !important;
+}
+
+/* Manejo de widgets populares de Elementor */
+.dark-mode .elementor-widget-text-editor,
+.dark-mode .elementor-widget-heading,
+.dark-mode .elementor-widget-button .elementor-button {
+    background: transparent !important;
+}
+
+/* Ajustes para popups y lightbox de Elementor */
+.dark-mode .dialog-widget-content,
+.dark-mode .elementor-lightbox {
+    background-color: #1a1a1a !important;
+}
+
+/* Formularios de Elementor */
+.dark-mode .elementor-field-group input,
+.dark-mode .elementor-field-group textarea {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+    border-color: #404040 !important;
+}
+
+/* Estilos del modo oscuro */
+body.dark-mode {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode * {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Estilos específicos para Elementor en modo oscuro */
+body.dark-mode .elementor-element {
+    background-color: inherit;
+}
+
+body.dark-mode .elementor-widget-container {
+    color: #ffffff;
+}
+
+body.dark-mode .elementor-heading-title {
+    color: #ffffff !important;
+}
+
+body.dark-mode .elementor-button {
+    background-color: #333333;
+}
+
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode span,
+body.dark-mode a {
+    color: #ffffff !important;
+}
+
+body.dark-mode img {
+    filter: brightness(0.8);
+}
+
+/* Estilo del botón en modo oscuro */
+body.dark-mode .dark-mode-toggle {
+    background: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .dark-mode-toggle svg {
+    transform: rotate(40deg);
+}
+
+/* Estilos para modo oscuro */
+[data-theme="dark"] {
+    --wp-dark-mode-bg: #1a1a1a;
+    --wp-dark-mode-text: #ffffff;
+    --wp-dark-mode-link: #80b3ff;
+    --wp-dark-mode-btn-bg: #333333;
+}
+
+/* Transiciones suaves */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos para modo oscuro activado */
+body[data-theme="dark"] {
+    background-color: var(--wp-dark-mode-bg);
+    color: var(--wp-dark-mode-text);
+}
+
+body[data-theme="dark"] a {
+    color: var(--wp-dark-mode-link);
+}
+
+/* Clase de utilidad para lectores de pantalla */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+/* Mejoras para el manejo de fondos claros */
+body.dark-mode .elementor-element,
+body.dark-mode .elementor-section,
+body.dark-mode .elementor-container,
+body.dark-mode div[class*="elementor"],
+body.dark-mode section[class*="elementor"] {
+    background-color: transparent !important;
+}
+
+/* Manejo específico de secciones con fondo blanco */
+body.dark-mode div[style*="background-color: #ffffff"],
+body.dark-mode div[style*="background-color: rgb(255, 255, 255)"],
+body.dark-mode section[style*="background-color: #ffffff"],
+body.dark-mode section[style*="background-color: rgb(255, 255, 255)"] {
+    background-color: #2d2d2d !important;
+}
+
+/* Manejo mejorado de fondos claros */
+body.dark-mode div[style*="background-color: #fff"],
+body.dark-mode div[style*="background-color: white"],
+body.dark-mode div[style*="background-color: #ffffff"],
+body.dark-mode div[style*="background-color: rgb(255, 255, 255)"],
+body.dark-mode section[style*="background: #fff"],
+body.dark-mode section[style*="background: white"],
+body.dark-mode .elementor-element[style*="background-color: #fff"],
+body.dark-mode .elementor-widget-container[style*="background-color: #fff"],
+body.dark-mode [class*="bg-white"],
+body.dark-mode .bg-light,
+body.dark-mode .has-white-background-color {
+    background-color: #1e1e1e !important;
+    background: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+/* Ajustes para contenedores específicos */
+body.dark-mode .elementor-widget-container,
+body.dark-mode .elementor-text-editor,
+body.dark-mode .elementor-tab-content,
+body.dark-mode .elementor-accordion-item,
+body.dark-mode .elementor-toggle-item {
+    background-color: transparent !important;
+}
+
+/* Manejo de bordes y sombras */
+body.dark-mode [class*="shadow"],
+body.dark-mode [class*="bordered"] {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+    border-color: #333 !important;
+}
+
+/* Preservar imágenes y logos */
+body.dark-mode img,
+body.dark-mode svg,
+body.dark-mode .elementor-image img,
+body.dark-mode .elementor-widget-image img {
+    filter: brightness(0.9);
+    background-color: transparent !important;
+}
+
+/* Mejorar contraste de texto */
+body.dark-mode div[style*="color: #000000"],
+body.dark-mode div[style*="color: rgb(0, 0, 0)"],
+body.dark-mode p[style*="color: #000000"],
+body.dark-mode p[style*="color: rgb(0, 0, 0)"] {
+    color: #ffffff !important;
+}
+
+/* Ajuste para elementos con fondo personalizado */
+body.dark-mode [class*="bg-"],
+body.dark-mode [style*="background"] {
+    background-color: #2d2d2d !important;
+    background-image: none !important;
+}
+
+/* Excepciones para imágenes y elementos multimedia */
+body.dark-mode img,
+body.dark-mode video,
+body.dark-mode iframe {
+    background-color: transparent !important;
+    opacity: 0.8;
+}
+
+body.dark-mode img[src$=".svg"],
+body.dark-mode .wp-block-cover__image-background {
+    background-color: transparent !important;
+}
+
+/* Asegurar que los elementos con fondo blanco sean visibles */
+body.dark-mode * {
+    background-color: inherit;
+}
+
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode li,
+body.dark-mode td,
+body.dark-mode th,
+body.dark-mode div {
+    color: #ffffff !important;
+}
+
+/* Manejo específico para enlaces */
+body.dark-mode a {
+    color: #9ec9ff !important;
+}
+
+body.dark-mode a:hover {
+    color: #99ccff !important;
+}
+
+/* Manejo de inputs y áreas de texto */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+    border-color: #404040 !important;
+}
+
+/* Manejo de bordes y separadores */
+body.dark-mode hr,
+body.dark-mode .border,
+body.dark-mode *[class*="border"] {
+    border-color: #444 !important;
+}
+
+/* Asegurar que el contenido de las noticias sea legible */
+body.dark-mode .post-content,
+body.dark-mode .entry-content,
+body.dark-mode article,
+body.dark-mode .wp-block-post-content {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+/* Fondo de elementos principales */
+body.dark-mode header,
+body.dark-mode main,
+body.dark-mode footer,
+body.dark-mode aside,
+body.dark-mode .sidebar {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+/* Elementos de texto */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p {
+    color: #ffffff !important;
+}
+
+/* Estilos base */
+:root {
+    --dark-bg: #1a1a1a;
+    --dark-text: #ffffff;
+    --dark-link: #9ecaed;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: var(--dark-bg) !important;
+    color: var(--dark-text) !important;
+}
+
+/* Asegurar que el contenido sea visible */
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode article,
+body.dark-mode .entry-content,
+body.dark-mode .post-content {
+    color: var(--dark-text) !important;
+}
+
+/* Enlaces en modo oscuro */
+body.dark-mode a {
+    color: var(--dark-link) !important;
+}
+
+/* Fondos de contenedores principales */
+body.dark-mode #main,
+body.dark-mode #content,
+body.dark-mode .site-content,
+body.dark-mode .entry,
+body.dark-mode article {
+    background-color: var(--dark-bg) !important;
+}
